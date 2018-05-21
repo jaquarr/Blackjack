@@ -1,6 +1,7 @@
 #Jack Robey
 #5/21/18
 #Blackjack.py
+from random import randint
 
 amountP1 = 5000
 
@@ -19,5 +20,18 @@ if wager > 500:
         if wager <= 500 and wager >= 2:
             break
 if wager >= 2 and wager <= 500:
-    
+    deck = []
+    for i in range(1,53):
+        deck.append(0)
+    for i in range(1,53):
+        x = randint(0,51)
+        if deck[x] == 0:
+            deck[x] = i
+        elif deck[x] != 0:
+            for j in range(0,51):
+                j = j + 1
+                if deck[j] != 0:
+                    deck[j] = i
+                    break
+    print(deck)
 
