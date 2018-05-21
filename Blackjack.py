@@ -30,7 +30,7 @@ if wager >= 2 and wager <= 500:
         elif deck[x] != 0:
             for j in range(0,51):
                 j = j + 1
-                if deck[j] != 0:
+                if deck[j] == 0:
                     deck[j] = i
                     break
     print(deck)
