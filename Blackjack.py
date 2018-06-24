@@ -35,7 +35,27 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
                     break
     card1P1 = deck[0]
     card2P1 = deck[1]
-    if deck[0]//
-    
+    scoreP1 = 0
+    if deck[0] or deck[1] == 1 or 2 or 3 or 4:
+        print('You drew an ace!')
+        ace = int(input("Would you like the ace to be worth 1 or 11 points?'))
+        if ace == 1:
+            scoreP1 = scoreP1 + 1
+        if ace == 11:
+            scoreP1 = scoreP1 + 11
+        if ace > 1 and ace < 11:
+            print('Error, an ace can ONLY be worth 1 or 11 points.')
+    if deck[0] or deck[1] == 5 or 6 or 7 or 8:
+        print('You drew a 2!')
+        scoreP1 = scoreP1 + 2
+    if deck[0] or deck[1] == 9 or 10 or 11 or 12:
+        print('You drew a 3!')
+        scoreP1 = scoreP1 + 3
+    if deck[0] or deck[1] == 13 or 14 or 15 or 16:
+        print('You drew a 4!')
+        scoreP1 = scoreP1 + 4
+    if deck[0] or deck[1] == 17 or 18 or 19 or 20:
+        print('You drew a 5!')
+        scoreP1 = scoreP1 + 5
     print(deck)
 
