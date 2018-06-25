@@ -38,7 +38,7 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
     scoreP1 = 0
     if deck[0] or deck[1] == 1 or 2 or 3 or 4:
         print('You drew an ace!')
-        ace = int(input("Would you like the ace to be worth 1 or 11 points?'))
+        ace = int(input('Would you like the ace to be worth 1 or 11 points?'))
         if ace == 1:
             scoreP1 = scoreP1 + 1
         if ace == 11:
@@ -57,5 +57,29 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
     if deck[0] or deck[1] == 17 or 18 or 19 or 20:
         print('You drew a 5!')
         scoreP1 = scoreP1 + 5
+    if deck[0] or deck[1] == 21 or 22 or 23 or 24:
+        print('You drew a 6!')
+        scoreP1 = scoreP1 + 6
+    if deck[0] or deck[1] == 25 or 26 or 27 or 28:
+        print('You drew a 7!')
+        scoreP1 = scoreP1 + 7
+    if deck[0] or deck[1] == 29 or 30 or 31 or 32:
+        print('You drew a 8!')
+        scoreP1 = scoreP1 + 8
+    if deck[0] or deck[1] == 33 or 34 or 35 or 36:
+        print('You drew a 9!')
+        scoreP1 = scoreP1 + 9
+    if deck[0] or deck[1] == 37 or 38 or 39 or 40:
+        print('You drew a 10!')
+        scoreP1 = scoreP1 + 10
+    if deck[0] or deck[1] == 41 or 42 or 43 or 44:
+        print('You drew a queen!')
+        scoreP1 = scoreP1 + 10
+    if deck[0] or deck[1] == 45 or 46 or 47 or 48:
+        print('You drew a king!')
+        scoreP1 = scoreP1 + 10
+    if deck[0] or deck[1] == 49 or 50 or 51 or 52:
+        print('You drew a jack!')
+        scoreP1 = scoreP1 + 10
     print(deck)
 
