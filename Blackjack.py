@@ -56,7 +56,7 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
         print('You drew a 7!')
         scoreP1 = scoreP1 + 7
     elif deck[0] == 29 or deck[0] == 30 or deck[0] == 31 or deck[0] == 32:
-        print('You drew a 8!')
+        print('You drew an 8!')
         scoreP1 = scoreP1 + 8
     elif deck[0] == 33 or deck[0] == 34 or deck[0] == 35 or deck[0] == 36:
         print('You drew a 9!')
@@ -101,7 +101,7 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
         print('You drew a 7!')
         scoreP1 = scoreP1 + 7
     elif deck[1] == 29 or deck[1] == 30 or deck[1] == 31 or deck[1] == 32:
-        print('You drew a 8!')
+        print('You drew an 8!')
         scoreP1 = scoreP1 + 8
     elif deck[1] == 33 or deck[1] == 34 or deck[1] == 35 or deck[1] == 36:
         print('You drew a 9!')
