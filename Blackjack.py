@@ -36,7 +36,7 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
     card1P1 = deck[0]
     card2P1 = deck[1]
     scoreP1 = 0
-    if deck[0] or deck[1] == 1 or 2 or 3 or 4:
+    if deck[0] == 1 or deck[0] == 2 or deck[0] == 3 or deck[0] == 4:
         print('You drew an ace!')
         ace = int(input('Would you like the ace to be worth 1 or 11 points?'))
         if ace == 1:
@@ -45,40 +45,85 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
             scoreP1 = scoreP1 + 11
         if ace > 1 and ace < 11:
             print('Error, an ace can ONLY be worth 1 or 11 points.')
-    if deck[0] or deck[1] == 5 or 6 or 7 or 8:
+    elif deck[0] == 5 or deck[0] == 6 or deck[0] == 7 or deck[0] == 8:
         print('You drew a 2!')
         scoreP1 = scoreP1 + 2
-    if deck[0] or deck[1] == 9 or 10 or 11 or 12:
+    elif deck[0] == 9 or deck[0] == 10 or deck[0] == 11 or deck[0] == 12:
         print('You drew a 3!')
         scoreP1 = scoreP1 + 3
-    if deck[0] or deck[1] == 13 or 14 or 15 or 16:
+    elif deck[0] == 13 or deck[0] == 14 or deck[0] == 15 or deck[0] == 16:
         print('You drew a 4!')
         scoreP1 = scoreP1 + 4
-    if deck[0] or deck[1] == 17 or 18 or 19 or 20:
+    elif deck[0] == 17 or deck[0] == 18 or deck[0] == 19 or deck[0] == 20:
         print('You drew a 5!')
         scoreP1 = scoreP1 + 5
-    if deck[0] or deck[1] == 21 or 22 or 23 or 24:
+    elif deck[0] == 21 or deck[0] == 22 or deck[0] == 23 or deck[0] == 24:
         print('You drew a 6!')
         scoreP1 = scoreP1 + 6
-    if deck[0] or deck[1] == 25 or 26 or 27 or 28:
+    elif deck[0] == 25 or deck[0] == 26 or deck[0] == 27 or deck[0] == 28:
         print('You drew a 7!')
         scoreP1 = scoreP1 + 7
-    if deck[0] or deck[1] == 29 or 30 or 31 or 32:
+    elif deck[0] == 29 or deck[0] == 30 or deck[0] == 31 or deck[0] == 32:
         print('You drew a 8!')
         scoreP1 = scoreP1 + 8
-    if deck[0] or deck[1] == 33 or 34 or 35 or 36:
+    elif deck[0] == 33 or deck[0] == 34 or deck[0] == 35 or deck[0] == 36:
         print('You drew a 9!')
         scoreP1 = scoreP1 + 9
-    if deck[0] or deck[1] == 37 or 38 or 39 or 40:
+    elif deck[0] == 37 or deck[0] == 38 or deck[0] == 39 or deck[0] == 40:
         print('You drew a 10!')
         scoreP1 = scoreP1 + 10
-    if deck[0] or deck[1] == 41 or 42 or 43 or 44:
+    elif deck[0] == 41 or deck[0] == 42 or deck[0] == 43 or deck[0] == 44:
         print('You drew a queen!')
         scoreP1 = scoreP1 + 10
-    if deck[0] or deck[1] == 45 or 46 or 47 or 48:
+    elif deck[0] == 45 or deck[0] == 46 or deck[0] == 47 or deck[0] == 48:
         print('You drew a king!')
         scoreP1 = scoreP1 + 10
-    if deck[0] or deck[1] == 49 or 50 or 51 or 52:
+    elif deck[0] == 49 or deck[0] == 50 or deck[0] == 51 or deck[0] == 52:
+        print('You drew a jack!')
+        scoreP1 = scoreP1 + 10
+    if deck[1] == 1 or deck[1] == 2 or deck[1] == 3 or deck[0] == 4:
+        print('You drew an ace!')
+        ace = int(input('Would you like the ace to be worth 1 or 11 points?'))
+        if ace == 1:
+            scoreP1 = scoreP1 + 1
+        if ace == 11:
+            scoreP1 = scoreP1 + 11
+        if ace > 1 and ace < 11:
+            print('Error, an ace can ONLY be worth 1 or 11 points.')
+    elif deck[0] == 5 or deck[0] == 6 or deck[0] == 7 or deck[0] == 8:
+        print('You drew a 2!')
+        scoreP1 = scoreP1 + 2
+    elif deck[0] == 9 or deck[0] == 10 or deck[0] == 11 or deck[0] == 12:
+        print('You drew a 3!')
+        scoreP1 = scoreP1 + 3
+    elif deck[0] == 13 or deck[0] == 14 or deck[0] == 15 or deck[0] == 16:
+        print('You drew a 4!')
+        scoreP1 = scoreP1 + 4
+    elif deck[0] == 17 or deck[0] == 18 or deck[0] == 19 or deck[0] == 20:
+        print('You drew a 5!')
+        scoreP1 = scoreP1 + 5
+    elif deck[0] == 21 or deck[0] == 22 or deck[0] == 23 or deck[0] == 24:
+        print('You drew a 6!')
+        scoreP1 = scoreP1 + 6
+    elif deck[0] == 25 or deck[0] == 26 or deck[0] == 27 or deck[0] == 28:
+        print('You drew a 7!')
+        scoreP1 = scoreP1 + 7
+    elif deck[0] == 29 or deck[0] == 30 or deck[0] == 31 or deck[0] == 32:
+        print('You drew a 8!')
+        scoreP1 = scoreP1 + 8
+    elif deck[0] == 33 or deck[0] == 34 or deck[0] == 35 or deck[0] == 36:
+        print('You drew a 9!')
+        scoreP1 = scoreP1 + 9
+    elif deck[0] == 37 or deck[0] == 38 or deck[0] == 39 or deck[0] == 40:
+        print('You drew a 10!')
+        scoreP1 = scoreP1 + 10
+    elif deck[0] == 41 or deck[0] == 42 or deck[0] == 43 or deck[0] == 44:
+        print('You drew a queen!')
+        scoreP1 = scoreP1 + 10
+    elif deck[0] == 45 or deck[0] == 46 or deck[0] == 47 or deck[0] == 48:
+        print('You drew a king!')
+        scoreP1 = scoreP1 + 10
+    elif deck[0] == 49 or deck[0] == 50 or deck[0] == 51 or deck[0] == 52:
         print('You drew a jack!')
         scoreP1 = scoreP1 + 10
     print(deck)
