@@ -119,5 +119,5 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
         print('You drew a jack!')
         scoreP1 = scoreP1 + 10
     print(deck)
-    print('Your score is',scoreP1)
+    input('Your score is',scoreP1,'. Hit or stand? Type "h" if you want to hit and "s" if you want to stand.')
 
