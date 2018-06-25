@@ -2,6 +2,7 @@
 #5/21/18
 #Blackjack.py
 from random import randint
+from random import shuffle
 
 amountP1 = 5000 #starting amount of cash for user
 
@@ -22,17 +23,8 @@ if wager > 500: #stops the game if wager is more than $500
 if wager >= 2 and wager <= 500: #case for when the wager is legal
     deck = [] #shuffles a deck of 52 cards
     for i in range(1,53):
-        deck.append(0)
-    for i in range(1,53):
-        x = randint(0,51)
-        if deck[x] == 0:
-            deck[x] = i
-        elif deck[x] != 0:
-            for j in range(-1,51):
-                j = j + 1
-                if deck[j] == 0:
-                    deck[j] = i
-                    break
+        deck.append(i)
+        shuffle(deck)
     card1P1 = deck[0]
     card2P1 = deck[1]
     scoreP1 = 0
