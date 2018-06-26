@@ -97,6 +97,7 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
     for i in range(1,4,2):
         if deck[i] == 1 or deck[i] == 2 or deck[i] == 3 or deck[i] == 4: #if cases for 
             print('The dealer drew an ace!')
+            print()
             if scoreD + 11 >= 17:
                 ace = 11
                 scoreD = scoreD + 11
