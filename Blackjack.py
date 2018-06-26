@@ -158,101 +158,98 @@ if wager >= 2 and wager <= 500: #case for when the wager is legal
     print("The dealer's score is",scoreD,'.')
     print()
 
-    while True:
+    for x in range(4,52):
         choice = input('Hit or stand? Type "hit" to hit and "stand" to stand. ')
         print()
         if choice == 'hit':
-            for i in range(4,51):
-                for x in range(i,i+1):
-                    if deck[x] == 1 or deck[x] == 2 or deck[x] == 3 or deck[x] == 4: #if cases for 
-                        print('You drew an ace!')
-                        print()
-                        ace = int(input('Would you like the ace to be worth 1 or 11 points?'))
-                        print()
-                        while True:
-                            if ace == 1:
-                                scoreU = scoreU + 1
-                                print('Your score is',scoreU,'.')
-                                print()
-                                break
-                            if ace == 11:
-                                scoreU = scoreU + 11
-                                print('Your score is',scoreU,'.')
-                                print()
-                                break
-                    elif deck[x] == 5 or deck[x] == 6 or deck[x] == 7 or deck[x] == 8:
-                        print('You drew a 2!')
-                        print()
-                        scoreU = scoreU + 2
+            if deck[x] == 1 or deck[x] == 2 or deck[x] == 3 or deck[x] == 4: #if cases for 
+                print('You drew an ace!')
+                print()
+                ace = int(input('Would you like the ace to be worth 1 or 11 points?'))
+                print()
+                while True:
+                    if ace == 1:
+                        scoreU = scoreU + 1
                         print('Your score is',scoreU,'.')
                         print()
-                    elif deck[x] == 9 or deck[x] == 10 or deck[x] == 11 or deck[x] == 12:
-                        print('You drew a 3!')
-                        print()
-                        scoreU = scoreU + 3
+                        break
+                    if ace == 11:
+                        scoreU = scoreU + 11
                         print('Your score is',scoreU,'.')
                         print()
-                    elif deck[x] == 13 or deck[x] == 14 or deck[x] == 15 or deck[x] == 16:
-                        print('You drew a 4!')
-                        print()
-                        scoreU = scoreU + 4
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 17 or deck[x] == 18 or deck[x] == 19 or deck[x] == 20:
-                        print('You drew a 5!')
-                        print()
-                        scoreU = scoreU + 5
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 21 or deck[x] == 22 or deck[x] == 23 or deck[x] == 24:
-                        print('You drew a 6!')
-                        print()
-                        scoreU = scoreU + 6
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 25 or deck[x] == 26 or deck[x] == 27 or deck[x] == 28:
-                        print('You drew a 7!')
-                        print()
-                        scoreU = scoreU + 7
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 29 or deck[x] == 30 or deck[x] == 31 or deck[x] == 32:
-                        print('You drew an 8!')
-                        print()
-                        scoreU = scoreU + 8
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 33 or deck[x] == 34 or deck[x] == 35 or deck[x] == 36:
-                        print('You drew a 9!')
-                        print()
-                        scoreU = scoreU + 9
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 37 or deck[x] == 38 or deck[x] == 39 or deck[x] == 40:
-                        print('You drew a 10!')
-                        print()
-                        scoreU = scoreU + 10
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 41 or deck[x] == 42 or deck[x] == 43 or deck[x] == 44:
-                        print('You drew a queen!')
-                        print()
-                        scoreU = scoreU + 10
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 45 or deck[x] == 46 or deck[x] == 47 or deck[x] == 48:
-                        print('You drew a king!')
-                        print()
-                        scoreU = scoreU + 10
-                        print('Your score is',scoreU,'.')
-                        print()
-                    elif deck[x] == 49 or deck[x] == 50 or deck[x] == 51 or deck[x] == 52:
-                        print('You drew a jack!')
-                        print()
-                        scoreU = scoreU + 10
-                        print('Your score is',scoreU,'.')
-                        print()
-                break
+                        break
+            elif deck[x] == 5 or deck[x] == 6 or deck[x] == 7 or deck[x] == 8:
+                print('You drew a 2!')
+                print()
+                scoreU = scoreU + 2
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 9 or deck[x] == 10 or deck[x] == 11 or deck[x] == 12:
+                print('You drew a 3!')
+                print()
+                scoreU = scoreU + 3
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 13 or deck[x] == 14 or deck[x] == 15 or deck[x] == 16:
+                print('You drew a 4!')
+                print()
+                scoreU = scoreU + 4
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 17 or deck[x] == 18 or deck[x] == 19 or deck[x] == 20:
+                print('You drew a 5!')
+                print()
+                scoreU = scoreU + 5
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 21 or deck[x] == 22 or deck[x] == 23 or deck[x] == 24:
+                print('You drew a 6!')
+                print()
+                scoreU = scoreU + 6
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 25 or deck[x] == 26 or deck[x] == 27 or deck[x] == 28:
+                print('You drew a 7!')
+                print()
+                scoreU = scoreU + 7
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 29 or deck[x] == 30 or deck[x] == 31 or deck[x] == 32:
+                print('You drew an 8!')
+                print()
+                scoreU = scoreU + 8
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 33 or deck[x] == 34 or deck[x] == 35 or deck[x] == 36:
+                print('You drew a 9!')
+                print()
+                scoreU = scoreU + 9
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 37 or deck[x] == 38 or deck[x] == 39 or deck[x] == 40:
+                print('You drew a 10!')
+                print()
+                scoreU = scoreU + 10
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 41 or deck[x] == 42 or deck[x] == 43 or deck[x] == 44:
+                print('You drew a queen!')
+                print()
+                scoreU = scoreU + 10
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 45 or deck[x] == 46 or deck[x] == 47 or deck[x] == 48:
+                print('You drew a king!')
+                print()
+                scoreU = scoreU + 10
+                print('Your score is',scoreU,'.')
+                print()
+            elif deck[x] == 49 or deck[x] == 50 or deck[x] == 51 or deck[x] == 52:
+                print('You drew a jack!')
+                print()
+                scoreU = scoreU + 10
+                print('Your score is',scoreU,'.')
+                print()
         if choice == 'stand':
                 print('Your score is',scoreU,'.')
                 break
